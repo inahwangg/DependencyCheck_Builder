@@ -39,5 +39,5 @@ jobs:
           git config user.name "GitHub Actions"
           echo "Last Published: $(date)" > published.md
           git commit -am "published"
-          git push origin main
+          git push origin "HEAD:${GITHUB_REF_NAME}"
 
